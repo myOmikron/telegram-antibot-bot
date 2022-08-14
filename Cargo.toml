@@ -1,0 +1,11 @@
+[package]
+name = "telegram-antibot-bot"
+version = "0.1.0"
+edition = "2021"
+authors = ["myOmikron <git@omikron.dev>"]
+
+[dependencies]
+# Telegram bot library
+frankenstein = { version = "0.20", default-features = false, features = ["async-http-client"] }
+# Async Runtime
+tokio = { version = "^1.20", features = ["macros", "time", "fs", "rt-multi-thread"] }
